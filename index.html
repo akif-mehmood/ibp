@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBP — Institute of Behavioral Psychology</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <img src="ibp-logo.jpg" alt="IBP Logo" class="preloader__logo" />
+      <div class="preloader__bar"><div class="preloader__fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <img src="ibp-logo.jpg" style="width: 120px; height: auto;" alt="logo">
+      <!-- <a href="#" class="logo">
+        <span class="logo__mark">V</span>
+        <span class="logo__text">Vermillion<em>Academy</em></span>
+      </a> -->
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Home</a></li>
+
+          <!-- About dropdown -->
+          <li class="nav__item--dropdown">
+            <a href="#about" class="nav__link nav__link--has-dropdown">
+              About Us <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="#about" class="nav__dropdown-link">Who We Are</a></li>
+              <li><a href="#stats" class="nav__dropdown-link">Leadership</a></li>
+              <li><a href="#stats" class="nav__dropdown-link">Manage Committee</a></li>
+            </ul>
+          </li>
+
+          <!-- Services dropdown -->
+          <li class="nav__item--dropdown">
+            <a href="#branches" class="nav__link nav__link--has-dropdown">
+              Services <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="#branches" class="nav__dropdown-link">School of Special Education</a></li>
+              <li><a href="#branches" class="nav__dropdown-link">School for Slow Learners</a></li>
+              <li><a href="#branches" class="nav__dropdown-link">Therapeutic Services</a></li>
+              <li><a href="#branches" class="nav__dropdown-link">Remedial Services</a></li>
+              <li><a href="#branches" class="nav__dropdown-link">Psychological Services</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#news" class="nav__link">News &amp; Events</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline
+      poster="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80">
+      <source src="./institute_of_behavioural_psychology_final_10mb.mp4" type="video/mp4" />
+    </video>
+    <!-- <div class="hero__overlay"></div> -->
+    <!-- <div class="hero__content reveal-hero">
+      <p class="hero__eyebrow">Est. 1996 · Karachi, Pakistan</p>
+      <h1 class="hero__heading">Institute of <br/><em>Behavioral Psychology</em></h1>
+      <p class="hero__sub">A legacy of academic excellence, character formation, and holistic growth — preparing students for the world ahead.</p>
+      <a href="#about" class="btn btn--hero">Discover Our Story</a>
+    </div> -->
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__img-wrap reveal-left">
+        <div class="about__img-frame about__img-frame--top">
+          <img src="IBP Staff pciture.jpg" alt="Students in class" />
+        </div>
+        <div class="about__img-frame about__img-frame--bottom">
+          <img src="IBP School of Sp.Ed.JPG" alt="Library" />
+        </div>
+        <div class="about__img-badge">
+          <span class="about__img-badge-num">30</span>
+          <span class="about__img-badge-text">Years of<br/>Excellence</span>
+        </div>
+      </div>
+      <div class="about__content reveal-right">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-heading">Welcome to Institute of <br/><em>Behavioral Psychology</em></h2>
+        <p class="about__para">(IBP) Institute of Behavioral Psychology is a psychology based, multipurpose educational center, located in Karachi, Pakistan. It is the only Institute of its kind in South Asia that offers educational, therapeutic and psychological services for children, youth and adults under one roof. At IBP we continuously strive to provide our students and clients opportunities to discover, learn and experience success, and live their lives to their highest potential.</p>
+        <ul class="about__list">
+          <li><span class="about__list-icon">✦</span> O/A Level &amp; Matriculation streams</li>
+          <li><span class="about__list-icon">✦</span> State-of-the-art STEM labs &amp; maker spaces</li>
+          <li><span class="about__list-icon">✦</span> Over 40 co-curricular activities</li>
+          <li><span class="about__list-icon">✦</span> Award-winning faculty with global credentials</li>
+        </ul>
+        <a href="#branches" class="btn btn--primary">Explore Branches</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BRANCHES — UPDATED ========== -->
+  <section class="branches section section--silver" id="branches">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Our Locations</p>
+        <h2 class="section-heading">Our <em>Branch</em></h2>
+        <p class="section-sub">Eight campuses across the city — each sharing the same commitment to excellence.</p>
+      </div>
+
+      <div class="branches__grid">
+
+        <div class="branch-card reveal-up" style="--delay:.05s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=500&q=80" alt="Clifton Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">School of Special Education</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-card reveal-up" style="--delay:.1s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=500&q=80" alt="DHA Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">School for Slow <br>Learners</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-card reveal-up" style="--delay:.15s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=500&q=80" alt="Gulshan Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">IBP Therapeutic <br>Services</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-card reveal-up" style="--delay:.2s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500&q=80" alt="North Nazimabad Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">IBP Remedial <br>Services</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-card reveal-up" style="--delay:.25s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&q=80" alt="PECHS Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">IBP Psychological <br>Services</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-card reveal-up" style="--delay:.3s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&q=80" alt="Korangi Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">IBP Global Educational <br>Services</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-card reveal-up" style="--delay:.35s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=500&q=80" alt="Malir Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">IBP Corporate <br>Services</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="branch-card reveal-up" style="--delay:.4s">
+          <div class="branch-card__inner">
+            <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?w=500&q=80" alt="Landhi Branch" class="branch-card__img" />
+            <div class="branch-card__overlay"></div>
+            <div class="branch-card__content">
+              <span class="branch-card__name">Landhi</span>
+              <a href="#" class="branch-card__btn">View More</a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COUNTER ========== -->
+  <section class="stats section" id="stats">
+    <div class="container stats__grid">
+      <div class="stat-item reveal-up" style="--delay:.0s">
+        <div class="stat-item__icon">🎓</div>
+        <div class="stat-item__num" data-target="12400">0</div>
+        <div class="stat-item__label">Students Enrolled</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up" style="--delay:.1s">
+        <div class="stat-item__icon">🏆</div>
+        <div class="stat-item__num" data-target="97">0</div>
+        <div class="stat-item__label">% Board Pass Rate</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up" style="--delay:.2s">
+        <div class="stat-item__icon">👩‍🏫</div>
+        <div class="stat-item__num" data-target="480">0</div>
+        <div class="stat-item__label">Expert Educators</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up" style="--delay:.3s">
+        <div class="stat-item__icon">🏫</div>
+        <div class="stat-item__num" data-target="8">0</div>
+        <div class="stat-item__label">City Campuses</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS ========== -->
+  <section class="news section section--silver" id="news">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Latest Updates</p>
+        <h2 class="section-heading">News &amp; <em>Stories</em></h2>
+      </div>
+      <div class="news__grid">
+        <article class="news-card reveal-up" style="--delay:.05s">
+          <div class="news-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=600&q=80" alt="Science Fair" />
+          </div>
+          <div class="news-card__body">
+            <span class="news-card__cat">Events</span>
+            <h3 class="news-card__title">Annual Science Olympiad Draws Record Participation</h3>
+            <p class="news-card__desc">Over 800 students from all eight branches competed in this year's inter-campus science olympiad, showcasing remarkable innovation.</p>
+            <a href="#" class="news-card__link">Read More <span>→</span></a>
+          </div>
+        </article>
+        <article class="news-card reveal-up" style="--delay:.1s">
+          <div class="news-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80" alt="Board Results" />
+          </div>
+          <div class="news-card__body">
+            <span class="news-card__cat">Achievements</span>
+            <h3 class="news-card__title">Matriculation Students Secure Top Positions Citywide</h3>
+            <p class="news-card__desc">Vermillion Academy students once again dominate the BSEK results, with 14 students placing in the district top 50.</p>
+            <a href="#" class="news-card__link">Read More <span>→</span></a>
+          </div>
+        </article>
+        <article class="news-card reveal-up" style="--delay:.15s">
+          <div class="news-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="New Lab" />
+          </div>
+          <div class="news-card__body">
+            <span class="news-card__cat">Campus</span>
+            <h3 class="news-card__title">Clifton Branch Unveils State-of-the-Art STEM Complex</h3>
+            <p class="news-card__desc">A new 8,000 sq ft STEM complex with robotics, coding labs, and a digital media studio opens at our flagship Clifton campus.</p>
+            <a href="#" class="news-card__link">Read More <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT — UPDATED (Google Map replaces image) ========== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__grid">
+
+      <div class="contact__info reveal-left">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-heading">We'd Love to<br/><em>Hear From You</em></h2>
+        <p class="contact__para">Whether you're a prospective parent, a student, or a community partner — our doors are always open. Reach out and one of our admissions counsellors will respond within 24 hours.</p>
+        <div class="contact__details">
+          <div class="contact__detail"><span>📞</span>35841713, 35841714, 35841102</div>
+          <div class="contact__detail"><span>✉️</span> info@ibpinternational.com</div>
+          <div class="contact__detail"><span>📍</span> AL-4, 14TH Lane Khayaban-e-Badar, Phase VII Phase 7 Defence Housing Authority, Karachi, 75500, Pakistan</div>
+        </div>
+        <!-- Google Map embed — DHA Phase 6, Karachi -->
+        <div class="contact__map-wrap">
+          <iframe
+            class="contact__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7242.502381594106!2d67.070281!3d24.821082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c6787e8a3a7%3A0x2c3db398ce948864!2sIBP%20International%20-%20Speech%20Therapy%20%26%20Remedials%20Karachi!5e0!3m2!1sen!2sus!4v1776776167180!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="DHA Phase 6 Karachi">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap reveal-right">
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+92 300 0000000" />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION REMOVED AS REQUESTED -->
+
+  <!-- ========== FOOTER — UPDATED (certificate in contact col) ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+         <img src="ibp-logo.jpg" style="width: 120px; height: auto;" alt="logo">
+        <p class="footer__about">Building futures through excellence in education since 1987. Eight campuses, one unwavering commitment.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#branches">Our Branches</a></li>
+          <li><a href="#stats">Academic Results</a></li>
+          <li><a href="#news">Latest News</a></li>
+          <li><a href="#contact">Admissions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Programmes</h4>
+        <ul class="footer__links">
+          <li><a href="#">Early Childhood</a></li>
+          <li><a href="#">Primary Years</a></li>
+          <li><a href="#">Middle School</a></li>
+          <li><a href="#">Matriculation</a></li>
+          <li><a href="#">A Levels</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact column — updated with certificate image below contact details -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact</h4>
+        <ul class="footer__links footer__links--contact">
+          <li>35841713, 35841714, 35841102</li>
+          <li>info@ibpinternational.com</li>
+          <li>AL-4, 14TH Lane Khayaban-e-Badar, Phase 7 Defence Housing Authority, Karachi.</li>
+        </ul>
+        <div class="footer__cert-wrap">
+          <img
+            src="ISO-20000.png" style="width: 100px; height: auto;"
+            alt="Accreditation Certificate"
+            class="footer__cert-img"
+          />
+          <span class="footer__cert-label">Accredited Institution</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========== BOTTOM STRIP ========== -->
+  <div class="footer__strip">
+    <p>© 2025 (IBP) Institute of Behavioral Psychology. All rights reserved.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
